@@ -221,5 +221,6 @@ Lives counter;
 score counter;
 harry potter powers;
 various dragons;
+Game over message;
 
 */
