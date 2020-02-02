@@ -23,7 +23,8 @@ var img2 = new Image();
 var img3 = new Image();
 
 //load an audio element
-let ouch = new Audio("ouch.mp3");     
+let ouch = new Audio("./sounds/ouch.mp3");     
+let dragonSound = new Audio("./sounds/dragon.mp3")
 
 //controls -- up down left and right
 document.onkeydown = function(e) {    

@@ -24,7 +24,7 @@ function startGame(){
 
 // Draws the background
 function drawBoard() {
-  ctx.fillStyle = '#890000'
+  ctx.fillStyle = '#6E111C'
   ctx.fillRect(0,0,canvas.width, canvas.height) //draws the green grass 
   ctx.fillStyle = 'grey'
   ctx.fillRect(canvas.width*0.13,0,canvas.width*0.75, canvas.height) //draws the road, it's /8 because x
@@ -102,10 +102,12 @@ function mainLoop (){
   // If car/HP moves then all the other conditions start
   if (car.x!=canvas.width/2 || car.y!=canvas.height-50){ 
     
+    // Modulo initiates the if statement every 10 loops
     if (count%10==0){
-  
-      dragon.y += 10
-      dragon.x += getRandomArbitrary(20,-20)
+
+      // Keeps the dragon moving between a range of pixels
+      dragon.y += 20
+      dragon.x += getRandomArbitrary(canvas.width*0.05,-canvas.width*0.05)
       // console.log(dragon.x,dragon.y)
 
       // Prevents the car from getting to the left side grass
@@ -152,6 +154,9 @@ function mainLoop (){
       dragon.x=210
       dragon.height+= 10
       dragon.width+= 10
+
+      // plays dragon sound 
+      dragonSound.play()
     }
     
   }

@@ -1,38 +1,25 @@
 body {
   padding: 0;
-  text-align: center;
-}
-
-.game-intro {
-  float: left;
-  padding: 0% 10%;
-}
-
-.game-intro p {
-  font-size: 18px;
-  font-family: "Verdana"
-}
-
-.logo-img {
-  width: 350px;
-}
-
-.arrows-img {
-  width: 150px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #FED541;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body button {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
-  background-color: #870007;
-  color: #fff;
+  font-weight: bolder;
+  background-color: #FED541;
+  color: #6E111C;
   padding: 20px 40px;
   border: 0;
   box-shadow: 0;
   border-radius: 5px;
-  margin-bottom: 20px;
+  width:min-content;
+  align-self: center;
+  margin-left: 30px;
 }
 
-#game-board {
-    float: left;
-    padding: 20px 0px;
-}
+
